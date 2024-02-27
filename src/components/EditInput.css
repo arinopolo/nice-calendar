@@ -1,0 +1,37 @@
+/* el formulario*/
+.edit-form {
+  display: flex;
+  padding-bottom: 0;
+  width: 80%;
+}
+
+/* campo del texto que vamos a poner*/
+.edit-input-text {
+  background-color: transparent;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 1rem 1rem;
+  width: 80%;
+}
+
+/* cuando pulsamos en el input*/
+.edit-input-text:focus-visible {
+  outline: none;
+}
+
+/* el buton de guardar*/
+.edit-input-btn {
+  background-color: #7516ed;
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  width: 30%;
+}
+/* ajustes para la version movil*/
+@media (max-width: 800px) {
+  .edit-input-btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.2rem;
+  }
+}

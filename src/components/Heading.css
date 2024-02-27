@@ -1,0 +1,37 @@
+.wrapper-h1 {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  overflow: hidden;
+  width: 100vw;
+}
+
+h1 {
+  animation: moveText 80s linear infinite;
+  font-size: 13rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0 6rem;
+  transform: translateX(100vw); /* Cambiado a 100vw */
+  white-space: nowrap;
+}
+
+@keyframes moveText {
+  0%,
+  100% {
+    transform: translateX(100vw); /* Cambiado a 100vw */
+  }
+
+  50% {
+    transform: translateX(-300vw);
+  }
+}
+
+/* ajustes version movil */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 8rem;
+  }
+}

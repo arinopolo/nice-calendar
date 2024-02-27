@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+/* main wrapper */
+.todos-container {
+  width: 50%;
+  padding: 1rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ajustes version movil */
+@media (max-width: 800px) {
+  .todos-container {
+    width: 90%;
+  }
+}

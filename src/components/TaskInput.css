@@ -1,0 +1,94 @@
+form {
+  border: 1px solid white;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  width: 80%;
+}
+
+form:hover {
+  transform: scale(1.1);
+}
+
+input {
+  border: none;
+  padding: 0.6rem 1rem;
+}
+
+/* campo de texto para agregar una nueva tarea */
+.input-text {
+  background-color: transparent;
+  color: white;
+  font-size: 0.9rem;
+  height: 100%;
+  width: 75%;
+}
+/* cuando pulsamos en el input */
+.input-text:focus-visible {
+  outline: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.3;
+}
+
+/* boton de agregar tarea */
+.input-btn {
+  background-color: white;
+  color: #1c1d20;
+  cursor: pointer;
+  font-weight: 600;
+  width: 30%;
+}
+
+/* background del boton de agregar tarea */
+.container {
+  align-items: center;
+  background-color: #7516ed;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100px;
+}
+
+/* el circulo del boton de agregar tarea */
+.circle {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  transition: left 0.3s ease-in-out;
+  width: 40px;
+}
+
+/* animacion cuando hacemos on hover del buton*/
+.container:hover .circle {
+  left: calc(100% - 40px);
+}
+
+/* texto del buton */
+.circle span {
+  color: #7516ed;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* ajustes version movil */
+@media (max-width: 800px) {
+  .input-btn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.2rem;
+  }
+  form {
+    width: 100%;
+  }
+}
